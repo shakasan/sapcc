@@ -1,5 +1,4 @@
 FROM centos:7
-MAINTAINER Francois B (Makoto) < francois [ at ] makotonoblog.be >
 ARG SAPCC_VERSION=2.13.1
 ARG SAPJVM_VERSION=8.1.075
 WORKDIR /tmp/sapcc

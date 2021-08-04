@@ -1,5 +1,7 @@
 # SAP Cloud Connector Docker Image
 
+Docker file to built a SAP Cloud Connector (SAPCC) Docker image.
+
 ## This image is built with
 
 - CentOS
@@ -17,7 +19,9 @@
 
 ## Pre-Built Docker Image
 
-Docker Hib : https://hub.docker.com/r/makoto2600/sapcc
+You can use a pre-built Docker Image available on Docker Hub with the Docker Compose example below.
+
+Docker Hub : https://hub.docker.com/r/makoto2600/sapcc
 
 ```yaml
 ---

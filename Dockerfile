@@ -11,7 +11,7 @@ FROM centos:7
 
 # SAPJVM and SAPCC version
 # check https://tools.hana.ondemand.com/#cloud
-ARG SAPCC_VERSION=2.13.1
+ARG SAPCC_VERSION=2.13.2
 ARG SAPJVM_VERSION=8.1.075
 
 # working setup dir
@@ -31,7 +31,7 @@ RUN wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=t
     wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapjvm-$SAPJVM_VERSION-linux-x64.rpm && \
     unzip sapcc-$SAPCC_VERSION-linux-x64.zip && \
     rpm -i sapjvm-$SAPJVM_VERSION-linux-x64.rpm && \
-    rpm -i com.sap.scc-ui-$SAPCC_VERSION-8.x86_64.rpm
+    rpm -i com.sap.scc-ui-$SAPCC_VERSION-5.x86_64.rpm
 
 # clean up previously installed rpm packages
 RUN rm /tmp/sapcc/*.rpm

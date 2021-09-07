@@ -12,7 +12,7 @@ FROM centos:7
 # SAPJVM and SAPCC version
 # check https://tools.hana.ondemand.com/#cloud
 ARG SAPCC_VERSION=2.13.2
-ARG SAPJVM_VERSION=8.1.075
+ARG SAPJVM_VERSION=8.1.078
 
 # working setup dir
 WORKDIR /tmp/sapcc

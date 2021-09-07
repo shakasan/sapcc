@@ -10,6 +10,8 @@ Docker file to built a SAP Cloud Connector (SAPCC) Docker image.
 
 ## Release notes
 
+- v4
+    - SAP JVM 8.1.078
 - v3
     - SAP Cloud Connector 2.13.2
 - v2

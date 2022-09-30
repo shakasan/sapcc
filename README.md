@@ -12,6 +12,9 @@ The goal of this image is to deploy in seconds a fully working SAP Cloud Connect
 
 ## Release notes
 
+- v6
+  - SAP JVM 8.1.090
+  - SAP Cloud Connector 2.14.2
 - v5
   - SAP JVM 8.1.083
   - SAP Cloud Connector 2.14.0.1
@@ -33,7 +36,7 @@ Docker Hub : https://hub.docker.com/r/makoto2600/sapcc
 
 ```yaml
 ---
-version: "2.1"
+version: '2.1'
 services:
   sapcc:
     image: makoto2600/sapcc:latest

@@ -11,8 +11,8 @@ FROM centos:7
 
 # SAPJVM and SAPCC version
 # check https://tools.hana.ondemand.com/#cloud
-ARG SAPCC_VERSION=2.14.0
-ARG SAPJVM_VERSION=8.1.083
+ARG SAPCC_VERSION=2.14.2
+ARG SAPJVM_VERSION=8.1.090
 
 # working setup dir
 WORKDIR /tmp/sapcc
@@ -23,11 +23,11 @@ RUN yum -y update && yum -y clean all && \
     yum -y install which unzip wget net-tools less sudo
 
 # download the SAP JVM and SAPCC
-RUN wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapcc-$SAPCC_VERSION.1-linux-x64.zip && \
+RUN wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapcc-$SAPCC_VERSION-linux-x64.zip && \
     wget --no-check-certificate --no-cookies --header "Cookie: eula_3_1_agreed=tools.hana.ondemand.com/developer-license-3_1.txt; path=/;" -S https://tools.hana.ondemand.com/additional/sapjvm-$SAPJVM_VERSION-linux-x64.rpm && \
-    unzip sapcc-$SAPCC_VERSION.1-linux-x64.zip && \
+    unzip sapcc-$SAPCC_VERSION-linux-x64.zip && \
     rpm -i sapjvm-$SAPJVM_VERSION-linux-x64.rpm && \
-    rpm -i com.sap.scc-ui-$SAPCC_VERSION-8.x86_64.rpm
+    rpm -i com.sap.scc-ui-$SAPCC_VERSION-4.x86_64.rpm
 
 # clean up previously installed rpm packages
 RUN rm /tmp/sapcc/*.rpm

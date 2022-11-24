@@ -12,6 +12,9 @@ The goal of this image is to deploy in seconds a fully working SAP Cloud Connect
 
 ## Release notes
 
+- v7
+  - SAP JVM 8.1.091
+  - SAP Cloud Connector 2.15.0
 - v6
   - SAP JVM 8.1.090
   - SAP Cloud Connector 2.14.2

@@ -39,7 +39,6 @@ Docker Hub : https://hub.docker.com/r/makoto2600/sapcc
 
 ```yaml
 ---
-version: '2.1'
 services:
   sapcc:
     image: makoto2600/sapcc:latest

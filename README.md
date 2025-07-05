@@ -1,5 +1,7 @@
 # SAP Cloud Connector Docker Image
 
+> **Warning** : this project is no longer maintained
+
 Dockerfile to build a SAP Cloud Connector (SAPCC) Docker image.
 
 The goal of this image is to deploy in seconds a fully working SAP Cloud Connector.
